@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Chicago Live</title>
+    <!-- Materialize stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- media query style -->
+    <link rel="stylesheet" media="mediatype and|not|only (media feature)" href="mystylesheet.css">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Anton|Arimo|Arvo|Dosis|Roboto+Condensed" rel="stylesheet">
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+</head>
+
+<body>
+    <img src="assets/Logo/ChicagoLive.png" id="logo">
+    <form>
+        <div class="container">
+            <div class="row">
+                <div class="start-date col s6 m6 l6">
+                    <input type="text" class="datepicker" id="startDate" placeholder="Start Date">
+                </div>
+                <div class="end-date col s6 m6 l6">
+                    <input type="text" class="datepicker" id="endDate" placeholder="End Date">
+                </div>
+            </div>
+            <!-- genre picker -->
+            <div class="row">
+                <div class="genre-picker input-field col s12">
+                    <select id="genre">
+                        <option id="changer" value="" disabled selected>Choose a Genre</option>
+                        <option value="R&B">R&amp;B</option>
+                        <option value="Blues">Blues</option>
+                        <option value="Club Dance">Club Dance</option>
+                        <option value="Rock">Rock</option>
+                        <option value="Pop">Pop</option>
+                        <option value="Alternative Rock">Alternative Rock</option>
+                        <option value="Rock">Rock &amp; Roll</option>
+                        <option value="Country">Country</option>
+                        <option value="Heavy Metal">Heavy Metal</option>
+                    </select>
+                </div>
+            </div>
+
+      <!-- submit and clear buttons -->
+    <div class="row">
+
+        <div class="error-msg"></div>
+        <br><br>
+        <button class="btn" id="submit-btn" type="submit">Submit</button>
+        <button class="btn" id="clear-btn" type="clear">Clear</button>
+
+    </div>
+
+
+  </div> <!-- container div -->
+</form>
+
+
+    <!-- container for adding buttons -->
+    <div class="container">
+        <div class="row">
+
+          <div class= "concert-btn">
+            
+          </div>
+          
+        </div>
+    </div>
+    <!-- Google Map  -->
+    <div class="map-responsive" style="width: 100%; overflow: hidden; height: 600px;">
+        <iframe id="myFrame" frameborder="0" style="border:0; margin-top: -150px;" src="https://www.google.com/maps/embed/v1/place?q=Chicago+Illinois&key=AIzaSyB7ydrZE1U4_y3TjyeaO2aVyfWzxUnxKuk" allowfullscreen>
+        </iframe>
+        <div class="row center-align">
+            <div class="col s6 m4 l4">
+                <div class="card selected-card">
+                    <div class="card-image">
+                        <img id="card-img" src="">
+                        <span class="card-title"></span>
+                        <a class="btn-floating halfway-fab waves-effect waves-light">
+          <i class="material-icons">star</i></a>
+                    </div>
+                    <div class="card-content">
+                        <p id="card-p"> </p>
+                        <p id="card-v"> </p>
+                        <p id="card-t"> </p>
+                        <br>
+                        <a id="card-url" href="http://www.ticketmaster.com/?tm_link=tm_homeA_logo" target="_blank">PURCHASE TICKETS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container fave-area">
+        <h2>My Favorites</h2>
+        <div class="panel-body">
+            <table class="table table-hover" id='band-table'>
+                <thead>
+                    <tr>
+                        <th>ARTIST NAME</th>
+                        <th>VENUE</th>
+                        <th>DATE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <br><br><br><br>
+        </div>
+    </div>
+    <!-- close fave area div -->
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="assets/javascript/javascript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+body {
+	background-color: #2B2B2A;
+	margin: auto;
+}
+
+#logo {
+	display: block;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width:38%;
+}
+
+h2 {
+	font-family: 'Arvo', serif;
+	color: #E5B04E;
+	text-align: center;
+	font-size: 38px;
+	margin-top: -110px;
+	margin-bottom: 5px;
+}
+
+p {
+	font-family: 'Arvo', serif;
+	color: white;
+	font-size: 14px !important;
+}
+
+form {
+	font-family: 'Arvo', serif;
+	color: white;
+}
+
+/*submit and clear buttons*/
+
+.btn {
+	font-family: 'Arvo', serif;
+	background-color: #E5B04E;
+	margin-left: 9px;
+	width: 125px;
+}
+
+.btn:hover {
+	font-family: 'Arvo', serif;
+	background-color: #EFC178;
+}
+
+.btn:focus{ 
+  background-color: #EFC178;
+}
+
+.error-msg {
+	color: #C32F1D;
+	margin-left: 9px;
+	font-size: 16px;
+}
+
+/*placeholder text*/
+
+input::placeholder {
+	color: white;
+	font-size: 16px;
+}
+
+
+/*google map*/
+
+.map-responsive{
+    overflow:hidden;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/*buttons that appear after submit is clicked*/
+.api-btn {
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #E5B04E;
+	width: 46%;
+	height: 50px;
+	white-space: nowrap;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	font-size: 18px;
+	margin: 8px;
+	background-color: #444444;
+	border: 0;
+}
+
+.api-btn:hover {
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color: #565656;
+}
+
+.api-btn:focus {
+	background-color: #565656;
+}
+
+/*formatting for the card that appears*/
+.card {
+	margin-top: 28px;
+	line-height: 125%;
+}
+
+/*star icon button*/
+.btn-floating{
+	background-color: #E5B04E;
+}
+
+.btn-floating:hover {
+	background-color: #EFC178;
+}
+
+#card-url {
+	color: #E5B04E;
+}
+
+#card-url:hover {
+	color: #EFC178;
+}
+
+th {
+	font-family: 'Arvo', serif;
+	color: white;
+	font-size: 18px;
+}
+
+td {
+	font-family: 'Arvo', serif;
+	color: white;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .logo {
+        width: 50%;
+    }
+}
