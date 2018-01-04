@@ -2,7 +2,7 @@
 
 This repository contains the user friendly webpage that searches for music events in Chicago. User can define specific music genre and date range. Result are displayed with the artists names, event dates, and specific venue locations.
 
-* [Direct link] (https://muri03.github.io/Chicago-Live/)
+* [Direct link](https://muri03.github.io/Chicago-Live/)
 
 ## Objectives
 
