@@ -33,7 +33,7 @@ This repository contains the user friendly webpage that searches for music event
 * [Rich Tranter](https://github.com/Richt2566/)
 * [Bob Stabile](https://github.com/stabrr)
 * [Emily Fritz](https://github.com/emfritz2)
-* [Muriel Mangubat](https://github.com/muri03)
+* [Muriel M](https://github.com/muri03)
 
 ## License
 
